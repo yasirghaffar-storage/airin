@@ -12,6 +12,7 @@ import { Toaster } from 'sonner'
 import Changelogs from '../components/Changelogs';
 import FloatingButton from '@/components/FloatingButton';
 import { AuthProvider } from './SessionProvider';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ['latin'] })
 //const myfont = localFont({ src: "../static-fonts/AldotheApache.ttf" })
@@ -102,6 +103,7 @@ export default async function RootLayout({ children }) {
             {children}
           </NextUiProvider>
         </AuthProvider>
+        <Analytics />
         {/* <NextTopLoader color="#CA1313" className="z-[99999]" /> */}
         <Toaster richColors={true} closeButton={true} theme="dark" />
         <Search />
