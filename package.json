@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^2.4.0",
-    "@consumet/extensions": "^1.7.0",
+    "@consumet/extensions": "^1.8.1",
     "@ducanh2912/next-pwa": "^10.2.2",
     "@headlessui/react": "^1.7.17",
     "@next/bundle-analyzer": "^14.1.0",
